@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Chapter1 | 技术小站</title>
+  <title>C#和.NET框架 | 技术小站</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -178,11 +178,11 @@
       </time>
     
 </span>
-                <h1>Chapter1</h1>
+                <h1>C#和.NET框架</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h1 id="Chaper1"><a href="#Chaper1" class="headerlink" title="Chaper1"></a>Chaper1</h1><p>本章内容</p>
+      		<h1 id="C-和-NET框架"><a href="#C-和-NET框架" class="headerlink" title="C#和.NET框架"></a>C#和.NET框架</h1><p>本章内容</p>
 <ul>
 <li>在.net之前</li>
 <li>.NET时代</li>
@@ -218,7 +218,39 @@
 <p>集合类</p>
 <p>线程和同步类</p>
 <p>XML类</p>
-
+<h2 id="1-3-编译成CIL"><a href="#1-3-编译成CIL" class="headerlink" title="1.3 编译成CIL"></a>1.3 编译成CIL</h2><p>.NET语言的编译器接受源代码文件，并生成名为程序集的输出文件。</p>
+<p>程序集要么是可执行的，要么是DLL。</p>
+<p>程序集里的代码并不是本机代码，而是一种名称为CIL（Common Intermidiate Language,公共中间语言）的中间语言</p>
+<p>程序集包含的信息中，包括下列项目</p>
+<p>程序的CIL</p>
+<p>程序中使用的类型的元数据</p>
+<p>对其他程序集引用的元数据</p>
+<h2 id="1-4-编译成本机代码并执行"><a href="#1-4-编译成本机代码并执行" class="headerlink" title="1.4 编译成本机代码并执行"></a>1.4 编译成本机代码并执行</h2><p>CIL直到调用运行时才会被编译成本机代码</p>
+<p>在运行时，CLR执行下面的步骤</p>
+<p>1.检查程序集的安全特性</p>
+<p>2.在内存中分配空间</p>
+<p>3.把程序集中的可执行代码发送给即时编译器，把其中一部分编译成本机代码（JIT，just-in-time)</p>
+<p>两个重要术语</p>
+<p>托管代码（manage code) 为.NET框架编写的代码称为托管代码，需要CLR</p>
+<p>非托管代码（unmanage code) 不在CLR控制之下运行的代码。</p>
+<h2 id="1-5-CLR"><a href="#1-5-CLR" class="headerlink" title="1.5 CLR"></a>1.5 CLR</h2><p>自动垃圾收集</p>
+<p>安全和认证</p>
+<p>通过访问BCL得到广泛的编程功能</p>
+<h2 id="1-6-CLI"><a href="#1-6-CLI" class="headerlink" title="1.6 CLI"></a>1.6 CLI</h2><p>CLI(Common Language Infrastructure) 公共语言基础结构</p>
+<p>包含 CLR BCL CTS CLS CIL 元数据定义及语义</p>
+<p>重要组成部分</p>
+<p>1.公共类型系统 CTS Common Type System</p>
+<p>CTS定义了一组丰富的内置类型，以及每种类型固有的，独特的特性</p>
+<p>.NET兼容编程语言提供的类型通常映射到CTS中已定义的内置类型集的某一个特殊子集。</p>
+<p>CTS最重要的特征之一是所有类型都继承自公共的基类——object</p>
+<p>使用CTS可以确保系统类型和用户定义类型能够被任何.NET兼容的语言所使用。</p>
+<p>2.公共语言规范</p>
+<p>CLS common language specification</p>
+<p>详细说明了一个.NET 兼容编程语言的规则、属性、行为，其主题包括数据类型、类结构、参数传递。</p>
+<h2 id="1-7-各种缩写"><a href="#1-7-各种缩写" class="headerlink" title="1.7 各种缩写"></a>1.7 各种缩写</h2><p>程序集：CIL</p>
+<p>CLI(公共语言基础结构)：CTS CLS</p>
+<p>CLR(公共语言运行库)：GC JIT BCL</p>
+<h2 id="1-8-C-的演化"><a href="#1-8-C-的演化" class="headerlink" title="1.8 C#的演化"></a>1.8 C#的演化</h2><h2 id="1-9-C-和Windows的演化"><a href="#1-9-C-和Windows的演化" class="headerlink" title="1.9 C#和Windows的演化"></a>1.9 C#和Windows的演化</h2>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
