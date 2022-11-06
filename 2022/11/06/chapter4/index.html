@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>技术小站</title>
+  <title>chapter4 | 技术小站</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -167,207 +167,153 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/11/06/chapter4/">chapter4</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2022-11-06T08:02:27.000Z" itemprop="datePublished">
           2022-11-06
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        类型、存储和变量4.1 C#程序是一组类型声明C#程序或DLL的源代码是一组类型声明
-对于可执行程序，类型声明中必须有一个包含Main方法的类
-命名空间是一种将相关的类型声明分组并命名的方法。
-4.2 类型是一种模板类型由下面的元素定义：
-名称
-用于保存数据成员的数据结构
-一些行为及约束条件
-4.3 实例化类型通过实例化类型而创建的对象被称为类型的对象或类型的实例。
-在C#程序中，每个数据项都是某种类型的实例。
-4.4 数据成员和函数成
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/11/06/chapter4/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>chapter4</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/11/03/chapter3/">C#编程概述</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-11-03T06:01:32.000Z" itemprop="datePublished">
-          2022-11-03
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        C#编程概述3.1 一个简单的C#程序1234567891011121314using System;namespace SimpleProgram&#123;    internal class Program    &#123;        static void Main(string[] args)        &#123;            Console.WriteLine(&quot;Hi there!&quot;
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/11/03/chapter3/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="类型、存储和变量"><a href="#类型、存储和变量" class="headerlink" title="类型、存储和变量"></a>类型、存储和变量</h1><h2 id="4-1-C-程序是一组类型声明"><a href="#4-1-C-程序是一组类型声明" class="headerlink" title="4.1 C#程序是一组类型声明"></a>4.1 C#程序是一组类型声明</h2><p>C#程序或DLL的源代码是一组类型声明</p>
+<p>对于可执行程序，类型声明中必须有一个包含Main方法的类</p>
+<p>命名空间是一种将相关的类型声明分组并命名的方法。</p>
+<h2 id="4-2-类型是一种模板"><a href="#4-2-类型是一种模板" class="headerlink" title="4.2 类型是一种模板"></a>4.2 类型是一种模板</h2><p>类型由下面的元素定义：</p>
+<p>名称</p>
+<p>用于保存数据成员的数据结构</p>
+<p>一些行为及约束条件</p>
+<h2 id="4-3-实例化类型"><a href="#4-3-实例化类型" class="headerlink" title="4.3 实例化类型"></a>4.3 实例化类型</h2><p>通过实例化类型而创建的对象被称为类型的对象或类型的实例。</p>
+<p>在C#程序中，每个数据项都是某种类型的实例。</p>
+<h2 id="4-4-数据成员和函数成员"><a href="#4-4-数据成员和函数成员" class="headerlink" title="4.4 数据成员和函数成员"></a>4.4 数据成员和函数成员</h2><p>数据成员：保存了与这个类的对象或整个类相关的数据</p>
+<p>函数成员：执行代码。函数成员定义类型的行为。</p>
+<h2 id="4-5-预定义类型"><a href="#4-5-预定义类型" class="headerlink" title="4.5 预定义类型"></a>4.5 预定义类型</h2><p>13种简单类型和3种非简单类型</p>
+<p>11种数据类型</p>
+<ul>
+<li>不同长度的有符号和无符号整数类型。</li>
+<li>浮点数类型float和double.</li>
+<li>一种称为decimal的高精度小数类型。</li>
+</ul>
+<p>一种Unicode字符类型char</p>
+<p>一种布尔类型bool。</p>
+<p>3种非简单类型如下。</p>
+<p>string，Unicode字符数组</p>
+<p>object, 它是所有其他类型的基类</p>
+<p>dynamic，使用动态语言编写的程序集时使用</p>
+<h2 id="4-6-用户定义类型"><a href="#4-6-用户定义类型" class="headerlink" title="4.6 用户定义类型"></a>4.6 用户定义类型</h2><p>类类型 class</p>
+<p>结构类型 struct</p>
+<p>数组类型 array</p>
+<p>枚举类型 enum</p>
+<p>委托类型 delegate</p>
+<p>接口类型 interface</p>
+<h2 id="4-7-栈和堆"><a href="#4-7-栈和堆" class="headerlink" title="4.7 栈和堆"></a>4.7 栈和堆</h2><h3 id="4-7-1-栈"><a href="#4-7-1-栈" class="headerlink" title="4.7.1 栈"></a>4.7.1 栈</h3><p>栈是一个内存数组，是一个LIFO（Last-In First-Out)的数据结构。</p>
+<p>栈存储几种类型的数据</p>
+<p>某些类型变量的值</p>
+<p>程序当前的执行环境</p>
+<p>传递给方法的参数</p>
+<p>栈的特征</p>
+<p>数据只能从栈的顶端插入和删除。</p>
+<p>把数据放到栈顶称为入栈。</p>
+<p>从栈顶删除数据称为出栈。</p>
+<h3 id="4-7-2-堆"><a href="#4-7-2-堆" class="headerlink" title="4.7.2 堆"></a>4.7.2 堆</h3><p>堆是一块内存区域。在堆里可以分配大块的内存用于存储某种类型的数据对象。</p>
+<h2 id="4-8-值类型和引用类型"><a href="#4-8-值类型和引用类型" class="headerlink" title="4.8 值类型和引用类型"></a>4.8 值类型和引用类型</h2><p>值类型只需要一段单独的内存，用于存储实际的数据。</p>
+<p>引用类型需要两段内存。</p>
+<p>第一段存储实际的数据，它总是位于堆中。</p>
+<p>第二段是一个引用，指向数据在堆中的存放位置。</p>
+<h3 id="4-8-1-存储引用类型对象的成员"><a href="#4-8-1-存储引用类型对象的成员" class="headerlink" title="4.8.1 存储引用类型对象的成员"></a>4.8.1 存储引用类型对象的成员</h3><p>引用类型对象的数据部分始终存放在堆里。</p>
+<p>值类型对象，或引用类型数据的引用部分可以存放在堆里，也可以存放在栈里，这依赖于实际环境。</p>
+<h3 id="4-8-2-C-类型的分类"><a href="#4-8-2-C-类型的分类" class="headerlink" title="4.8.2 C#类型的分类"></a>4.8.2 C#类型的分类</h3><p>值类型： sbyte, byte, short, ushort, int, uint, long, ulong, bool, struct, enum</p>
+<p>引用类型：float, object,double,char,decimal,object,string,dynamic,class,interface,delegate,Array</p>
+<h2 id="4-9-变量"><a href="#4-9-变量" class="headerlink" title="4.9 变量"></a>4.9 变量</h2><p>变量是一个名称，表示程序执行时存储在内存中的数据。</p>
+<p>C#提供了4种变量，每一种都将详细讨论。</p>
+<p>局部变量</p>
+<p>字段</p>
+<p>参数</p>
+<p>数据元素</p>
+<h3 id="4-9-1-变量声明"><a href="#4-9-1-变量声明" class="headerlink" title="4.9.1 变量声明"></a>4.9.1 变量声明</h3><p>给变量命名，并为他关联一种类型；</p>
+<p>让编译器为它分配一块内存；</p>
+<p>1.变量初始化语句</p>
+<p>int var2=17;</p>
+<p>2.自动初始化</p>
+<p>局部变量    栈或者栈和堆</p>
+<p>类字段        栈</p>
+<p>结构字段    栈或堆</p>
+<p>参数            栈</p>
+<p>数组元素    堆</p>
+<h3 id="4-9-2-多变量声明"><a href="#4-9-2-多变量声明" class="headerlink" title="4.9.2 多变量声明"></a>4.9.2 多变量声明</h3><p>int var3=7,var4,var5=3;</p>
+<h3 id="4-9-3-使用变量的值"><a href="#4-9-3-使用变量的值" class="headerlink" title="4.9.3 使用变量的值"></a>4.9.3 使用变量的值</h3><p>Console.WriteLine(“{0}”,var2);</p>
+<h2 id="4-10-静态类型和dynamic-关键字"><a href="#4-10-静态类型和dynamic-关键字" class="headerlink" title="4.10 静态类型和dynamic 关键字"></a>4.10 静态类型和dynamic 关键字</h2><h2 id="4-11-可空类型"><a href="#4-11-可空类型" class="headerlink" title="4.11 可空类型"></a>4.11 可空类型</h2>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/11/03/chapter2/">C#和.NET CORE</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-11-03T05:31:57.000Z" itemprop="datePublished">
-          2022-11-03
-      </time>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        C#和.NET Core2.1 .NET 框架背景2.2 为什么选择.NET Core2.3 .NET Core的目标多平台支持
-快速开发和升级
-更小的应用程序占用空间
-更简单的部署
-更少的版本问题
-开源社区支持
-改进的应用程序性能
-全新的开始
-2.4 多平台支持2.5 快速发展和升级2.6 程序占用空间小、部署简单、版本问题少2.7 开源社区支持2.8 改进的应用程序2.9 全新的开始2.10 .NET Core的发展2.11 .NE
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/11/03/chapter2/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/11/02/chapter1/">C#和.NET框架</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-11-02T15:31:12.000Z" itemprop="datePublished">
-          2022-11-02
-      </time>
     
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        C#和.NET框架本章内容
+    <a class="pull-right" href="/2022/11/03/chapter3/">
+        C#编程概述 →
+    </a>
+    
+</nav>
 
-在.net之前
-.NET时代
-编译成CIL
-编译成本机代码并执行
-CLR
-CLI
-各种缩写
-C#的演化
-C#和Windows的演化
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
 
-1.1 在.net之前1.1.1 20世纪90年代末的Windows编程1.1.2 下一代平台服务的目标1.2 .NET时代.NET的特点：多平台，行业标准，安全性
-1.2.1 .NET框架的组成三个部分
-执行环境 CLR Common Language Runtime
-内存
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/11/02/chapter1/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
