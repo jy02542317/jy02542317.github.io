@@ -182,7 +182,57 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		
+      		<h1 id="类的基本概念"><a href="#类的基本概念" class="headerlink" title="类的基本概念"></a>类的基本概念</h1><h2 id="5-1-类的概述"><a href="#5-1-类的概述" class="headerlink" title="5.1 类的概述"></a>5.1 类的概述</h2><p>类是一种活动的数据结构</p>
+<p>数据成员</p>
+<p>它存储与类或类的实例相关的数据</p>
+<p>函数成员</p>
+<p>它执行代码，通常会模拟类所表示的现实世界事物的功能和操作</p>
+<p>类成员的类型</p>
+<p>数据成员存储数据：字段，常量</p>
+<p>函数成员执行代码：方法，属性，运算符，索引器，构造函数，析构函数，事件</p>
+<h2 id="5-2-程序和类：一个简单的示例"><a href="#5-2-程序和类：一个简单的示例" class="headerlink" title="5.2 程序和类：一个简单的示例"></a>5.2 程序和类：一个简单的示例</h2><h2 id="5-3-申明类"><a href="#5-3-申明类" class="headerlink" title="5.3 申明类"></a>5.3 申明类</h2><p>类的名称</p>
+<p>类的成员</p>
+<p>类的特征</p>
+<h2 id="5-4-类成员"><a href="#5-4-类成员" class="headerlink" title="5.4 类成员"></a>5.4 类成员</h2><p>字段和方法是最重要的类成员类型。字段是数据成员，方法是函数成员。</p>
+<h3 id="5-4-1-字段"><a href="#5-4-1-字段" class="headerlink" title="5.4.1 字段"></a>5.4.1 字段</h3><p>字段是隶属于类的变量。</p>
+<p>它可以是任何类型，无论是预定义类型还是用户定义类型。</p>
+<p>和所有变量一样，字段用来保存数据。</p>
+<p>可以被写入</p>
+<p>可以被读取</p>
+<ol>
+<li><p>显示和隐式字段初始化</p>
+<p>字段初始化语句 是字段声明的一部分，由一个等号后面跟着一个求值表达式组成。</p>
+<p>初始化值必须是编译时可确定的</p>
+<p>如果没有初始化值，字段的值会被编译器设为默认值。每种值类型的默认值都是0，bool类型的是false,引用类型是null。</p>
+</li>
+<li><p>声明多个字段</p>
+<p>int F1,F3=25</p>
+</li>
+</ol>
+<h3 id="5-4-2-方法"><a href="#5-4-2-方法" class="headerlink" title="5.4.2 方法"></a>5.4.2 方法</h3><p>方法是具有名称的可执行代码块，可以从程序的很多不同地方同时执行，甚至从其他程序中执行。</p>
+<p>声明方法的最简语法：</p>
+<p>返回类型</p>
+<p>名称</p>
+<p>参数列表</p>
+<p>方法体</p>
+<h2 id="5-5-创建变量和类的实例"><a href="#5-5-创建变量和类的实例" class="headerlink" title="5.5 创建变量和类的实例"></a>5.5 创建变量和类的实例</h2><p>类是引用类型</p>
+<p>数据的引用保存在一个类类型的变量中。</p>
+<h2 id="5-6-为数据分配内存"><a href="#5-6-为数据分配内存" class="headerlink" title="5.6 为数据分配内存"></a>5.6 为数据分配内存</h2><p>new运算符为任意指定类型的实例分配并初始化内存。</p>
+<p>Dealer theDealer=new Dealer();</p>
+<h2 id="5-7-实例成员"><a href="#5-7-实例成员" class="headerlink" title="5.7 实例成员"></a>5.7 实例成员</h2><p>实例成员</p>
+<p>静态成员</p>
+<h2 id="5-8-访问修饰符"><a href="#5-8-访问修饰符" class="headerlink" title="5.8 访问修饰符"></a>5.8 访问修饰符</h2><p>private</p>
+<p>public</p>
+<p>protected</p>
+<p>internal</p>
+<p>protected internal</p>
+<h2 id="5-9-从类的内部访问成员"><a href="#5-9-从类的内部访问成员" class="headerlink" title="5.9 从类的内部访问成员"></a>5.9 从类的内部访问成员</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">DaysTemp</span></span><br><span class="line">  &#123;</span><br><span class="line">      <span class="keyword">private</span> <span class="built_in">int</span> High = <span class="number">75</span>;</span><br><span class="line">      <span class="keyword">private</span> <span class="built_in">int</span> Low = <span class="number">45</span>;</span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">private</span> <span class="built_in">int</span> <span class="title">GetHigh</span>()</span></span><br><span class="line">      &#123;</span><br><span class="line">          <span class="keyword">return</span> High;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">private</span> <span class="built_in">int</span> <span class="title">GetLow</span>()</span></span><br><span class="line">      &#123;</span><br><span class="line">          <span class="keyword">return</span> Low;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="built_in">float</span> <span class="title">Average</span>()</span></span><br><span class="line">      &#123;</span><br><span class="line">          <span class="keyword">return</span> (GetHigh()+GetLow())/<span class="number">2</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.10 从类的外部访问成员</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">           DaysTemp2 temp=<span class="keyword">new</span> DaysTemp2();</span><br><span class="line">            temp.High = <span class="number">85</span>;</span><br><span class="line">            temp.Low = <span class="number">60</span>;</span><br><span class="line">            Console.WriteLine(<span class="string">&quot;High: &#123;0&#125;&quot;</span>,temp.High);</span><br><span class="line">            Console.WriteLine(<span class="string">$&quot;Low: <span class="subst">&#123;temp.Low&#125;</span>&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">class</span> <span class="title">DaysTemp2</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> High = <span class="number">75</span>;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> Low = <span class="number">45</span>;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.11 综合应用</p>
+
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
